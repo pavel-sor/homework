@@ -1,0 +1,230 @@
+body {
+    background: #181e34;
+    font-family: "Montserrat", "Arial", sans-serif;
+    /* font-size: 16px; */
+    /* font-weight: 400; */
+    line-height: 150%;
+    color: #fff;
+  }
+
+  .conteiner {
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+  }
+
+  .header {
+    padding: 30px 0 36px;
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-nav {
+    margin-left: auto;
+  }
+
+  .header-list {
+    display: flex;
+  }
+
+  .header-item {
+    margin-right: 30px;
+  }
+
+  .header-button {
+    background: #fff;
+    color: #2766ae;
+    border-radius: 100px;
+    padding: 14px 30px;
+    font-weight: 500;
+  }
+
+  /* ======================= */
+  .hero {
+    padding: 120px 0;
+    background: url("../img/hero-bg.jpeg") 10% 50% / cover no-repeat;
+  }
+
+  .hero-titl {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+
+  .hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero-text {
+    max-width: 436px;
+  }
+
+  .hero-text span {
+    color: rgb(1, 162, 203);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    
+  }
+
+  .paragraph {
+    margin-bottom: 15px;
+  }
+
+  .hero-battons {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .hero-batton-one {
+    border-radius: 100px;
+    background: linear-gradient(180.00deg, #00a4cc,#2766ae 100%);
+    position: static;
+    width: 320px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10;
+    padding: 18px 30px 18px 30px;
+  }
+
+  .hero-batton-two {
+    border-radius: 100px;
+    background: linear-gradient(129.14deg, #00a4cc 5.913%,#2766ae 91.534%);
+    position: static;
+    width: 320px;
+    height: 56px;
+    /* Автолейаут */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4;
+    padding: 18px 30px 18px 30px;  
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+.hero-batton-two img {
+  margin: 5px;
+}
+/* ====================== */
+.cards {
+    padding: 120px 0;
+}
+
+.cards-titl {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.cards-text {
+    text-align: center;
+    margin: 0 auto 60px;
+    max-width: 513px;
+}
+
+.cards-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -14px;
+    margin-bottom: -28px;
+    padding-bottom: 28px;
+  
+}
+
+.cards-flex-item {
+  margin-bottom: 28px;
+  padding: 0 14px;
+  flex: 0 0 25%;
+}
+.cards-flex-inner {
+  background: #197cb8;
+  border: 2px solid #176bae;
+  border-radius: 16px;
+  box-shadow: 4px 4px 13px 0px #050d29c2;
+  padding: 28px 15px;
+}
+
+.cards-flex-titl {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+.cards-flex-text {
+    text-align: center;
+}
+.cards-batton-one {
+    display: block;
+    border-radius: 100px;
+    background: linear-gradient(129.14deg, #00a4cc 5.913%,#2766ae 91.534%);
+    padding: 18px 30px;
+    text-align: center;
+    max-width: 436px;
+    margin: 0 auto;
+}
+/* ============ */
+.footer {
+  padding: 60px 0;
+  border-top: 1px solid #323952;
+}
+.footer-inner {
+  display: flex;
+
+}
+
+.footer-desk {
+  max-width: 267px;
+  margin-right: auto;
+}
+
+.footer-desk a {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.footer-col {
+max-width: 204px;
+width: 100%;
+}
+
+.footer-col-margin {
+  margin-right: 28px;
+}
+
+.footer-titl {
+  font-weight: 600;
+  font-size: 22px;
+line-height: 27px;
+text-transform: uppercase;
+margin-bottom:  20px;
+}
+
+.footer-item {
+  margin-bottom: 10px;
+}
