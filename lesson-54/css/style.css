@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Great Vibes";
+  src: local("Great Vibes Regular"), 
+       local("GreatVibes-Regular"),
+       url("../fonts/GreatVibes-Regular.woff2") format("woff2"),
+       url("../fonts/GreatVibes-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.header {
+  background-color: #000000;
+}
+
+.text {
+  font-family: Great Vibes, Arial, sans-serif;
+  font-size: 30px;
+  color: #fff;
+}
+
+.inner {
+  padding: 0 15px 100px 0;
+  display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.block {
+  flex-basis: 50%;
+}
+
+.rectangle {
+  width: 500px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #ff0033;
+  border-radius: 1000px;
+  position: fixed;
+  top: 66%;
+  left: 57%;
+}
+
+
