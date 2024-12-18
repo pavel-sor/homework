@@ -58,3 +58,6 @@ p {
 .abief:hover p {
     transition: all 1s .8s;
 }
+p {
+    transition-delay: 2s
+}
