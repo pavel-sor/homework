@@ -1,0 +1,45 @@
+:root {
+  --acent-color: #68fc6f;
+
+}
+body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  background: #202022;
+  color: #fff;
+  padding: 2vw;
+}
+.container {
+  max-width: 50vw;
+  margin: 0 auto;
+  background: #59595e;
+  padding: 2vw;
+  border-radius: .8vw;
+  text-align: center;
+  overflow: hidden;
+  border: 5px solid var(--acent-color);
+}
+
+.title {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 1.8vw;
+  background: var(--acent-color);
+  padding: 2vw;
+  margin: -2vw -2vw 2vw;
+}
+
+.text {
+ margin-bottom: 2vw; 
+}
+
+.button {
+  padding: 1.5vw;
+  background: var(--acent-color);
+  border-radius: .8vw;
+  margin: 0 auto;
+  text-align: center;
+  min-width: 20vw;
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+}
