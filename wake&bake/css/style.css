@@ -215,6 +215,7 @@ position: relative;
   left: -13px;
   width: 34px;
   height: 34px;
+  z-index: -1;
   background: var(--accent-color);
   border-radius: 50%;
 
@@ -557,6 +558,7 @@ position: relative;
           left: -13px;
           width: 34px;
           height: 34px;
+          z-index: -1;
           background: var(--accent-color);
           border-radius: 50%;
         
