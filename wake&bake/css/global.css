@@ -1,0 +1,184 @@
+:root {
+  --general-text: #312c27;
+  --accent-text: #1F1711;
+  --general-bg: #FFF9F4;
+  --accent-bg: #FFE0CB;
+  --accent-color: #FFA55C;
+  --transition: all .4s;
+  --border-radius: 20px;
+}
+
+body {
+    font-family: "Montserrat", "Arial", sans-serif;
+    line-height: 1.5;
+    color: var(--general-text);
+    background: var(--general-bg);
+  }
+
+.body--opened-menu {
+  overflow: hidden;
+}
+
+.body--opened-modal {
+  overflow: hidden;
+}
+
+  .wrapper {
+    min-height: 100%;
+    /* / Cледующие 2 настройки для того чтобы небыло 
+    горизонтального скрулбара, wrapper будет наследовать ширину body */
+    width: 100%;
+    overflow: hidden;
+    /* Сделаем wrapper флексбоксом, для того чтобы header, main,
+    footer стали элементами флексбокса, далее main дадим fg 1,
+    теперь main будет растягивать header и footer к верху и к низу*/
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main {
+    flex-grow: 1;
+  }
+
+  .main__about {
+    padding: 140px 0;
+  }
+
+  .main__program, 
+  .main__gallery {
+    padding-bottom: 140px;
+  }
+
+  .container {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+  }
+
+  .title {
+    font-family: Gabriola;
+    font-size: 74px;
+    line-height: 0.82;
+    color: var(--accent-text);
+  }
+
+  .button {
+    width: 100%;
+    display: flex;
+    border-radius: 60px;
+    background: var(--accent-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    height: 62px;
+    align-items: center;
+    justify-content: center;
+
+    transition: var(--transition);
+  }
+  .button:hover {
+    background: #ff9138;
+  }
+/* ====================modal========================= */
+  .modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    background: #00000080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+  }
+
+  .body--opened-modal  .modal{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal__window {
+    border-radius: var(--border-radius);
+    background: var(--general-bg);
+    max-width: 428px;
+    max-height: 100%;
+    padding: 0 60px 60px;
+    position: relative;
+  }
+  .modal__cancel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .modal__cancel path {
+    transition: var(--transition);
+  }
+  .modal__cancel:hover path,
+  .modal__cancel:hover rect {
+    stroke: #AC907A;
+  }
+  .modal__img {
+    margin: -65px 0 15px 13px;
+    max-width: 100%;
+  }
+  .modal__title {
+    color: var(--accent-text);
+    font-family: Gabriola;
+    font-size: 42px;
+    line-height: .9;
+    margin-bottom: 10px;
+  }
+  .modal__text {
+    margin-bottom: 30px;
+  }
+  .modal__form {
+  }
+  .modal__form-label {
+    margin-bottom: 10px;
+  }
+  .field {
+    display: block;
+    position: relative;
+  }
+  .field span {
+    color: #ac907a;
+    font-size: 11px;
+    position: absolute;
+    top: 12px;
+    left: 28px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+  }
+  .field__input {
+    display: block;
+    width: 100%;
+    background: #00000000;
+    border: 1px solid #ac907a;
+    border-radius: 100px;
+    padding: 19px 43px 19px 28px;
+    font-size: 16px;
+    transition: var(--transition);
+  }
+  .field__input:hover {
+    border-color: var(--accent-color);
+  }
+  .field__input::placeholder {
+    color: #ac907a;
+    transition: var(--transition);
+  }
+  .field__input:hover::placeholder {
+    color: var(--accent-color);
+  }
+  .field__input:focus {
+    padding: 26px 43px 12px 28px;
+  }
+  .field__input:focus + span {
+    opacity: 1;
+    visibility: visible;
+  }
