@@ -1,0 +1,385 @@
+
+body {
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  }
+
+  .body--opened-menu {
+    overflow: hidden;
+  }
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__top {
+  padding-top: 30px;
+}
+.container {
+  max-width: 1324px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+.header__top-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 28px;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  max-width: 170px;
+  z-index: 9;
+}
+.nav {
+
+}
+.nav__list {
+  display: flex;
+  gap: 4vh 40px;
+}
+.nav__item {
+  line-height: 16.8px;
+  text-transform: uppercase;
+
+}
+.nav__link {
+  display: block;
+  /* Увеличили область нажатия */
+  padding: 5px 0;
+  position: relative;
+}
+.nav__link::after {
+  content: url("../img/icons/arrow-bottom.svg");
+  position: absolute;
+  right: -16px;
+
+  opacity: 0;
+  transition: all .4s;
+}
+.nav__link:hover::after {
+  opacity: 1;
+}
+
+.burger-icon {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 11;
+  position: relative;
+}
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+  display: block;
+  width: 30px;
+  height: 3px;
+  border-radius: 100px;
+  background: #000000;
+  transition: all .4s;
+  position: absolute;
+}
+
+.burger-icon span {
+  position: relative;
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+  content: '';
+  position: absolute;
+}
+
+.burger-icon span::before {
+  top: -8px;
+}
+
+.burger-icon span::after {
+  bottom: -8px;
+}
+
+.body--opened-menu .burger-icon span {
+  background: transparent;
+}
+
+.body--opened-menu .burger-icon span::before {
+  top: 0px;
+  transform: rotate(45deg);
+}
+
+.body--opened-menu .burger-icon span::after {
+  bottom: 0px;
+  transform: rotate(-45deg);
+}
+
+.nav__buttons {
+
+}
+.nav__buttons-list {
+  display: flex;
+  gap: 21px;
+}
+.nav__buttons-item {
+  
+}
+.nav__buttons-link {
+  display: flex;
+}
+
+/* ======слайдер===================== */
+
+.header__hero {
+
+}
+.hero {
+  padding-top: 57px;
+}
+.hero__slider {
+  width: 100%;
+  height: 550px;
+  background: #dce5e2;
+  border: 1px solid #000;
+  border-radius: 32px;
+  position: relative;
+  margin-bottom: 75px;
+}
+.swiper {
+}
+.hero__wrapper {
+
+}
+.swiper-wrapper {
+}
+.hero__slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.hero__inner {
+  position: relative;
+}
+.hero__nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row; 
+  position: absolute;
+  padding: 0 18px;
+}
+
+.hero__info {
+  max-width: 644px;
+  padding: 0 0 0 56px; 
+  z-index: 15;
+}
+.hero__title {
+  font-family: "Readex Pro" sans-serif;
+  font-size: 58px;
+  line-height: 69.6px;
+  margin-bottom: 19px;
+}
+.hero__text {
+  font-family: "Inter" sans-serif;
+  font-size: 16px;
+  line-height: 19.2px;
+  padding-bottom: 30px;
+}
+.hero__button {
+  width: 170px;
+  height: 50px;
+  font-family: 'Inter18pt' sans-serif;
+  line-height: 19.2px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 21.6;
+  font-weight: 400;
+  border: 1px solid #000;
+  border-radius: 60px;
+  padding: 14px 53px;
+}
+.hero__img {
+  display: flex;
+  align-items: end;
+  height: 100%;
+}
+.hero__img img {
+  width: 100%;
+  display: flex;
+  align-self: flex-end;
+}
+.hero__prev, 
+.hero__next {
+  background-color: transparent;
+  z-index: 2;
+}
+.hero__next {
+
+}
+
+/* Стили для пагинации */
+
+.swiper-pagination {
+  position: absolute;
+  padding: 0 0 17px;
+  z-index: 15;
+  /* background: rgba(0, 0, 0, 0.2); Полупрозрачный фон */
+  border-radius: ;
+}
+.swiper-pagination-bullet {
+  border-radius: 0;
+  background: transparent;
+  width: 194px;
+  height: 2px;
+  background: #757575; /* Цвет неактивной точки */
+  opacity: 1;
+  margin: 5px 17px !important;
+  transition: all 0.3s ease;
+}
+.swiper-pagination-bullet-active {
+  background: #000000; /*Цвет активной точки*/
+  transform: scale(1.2); /*Увеличиваем активную точку*/
+}
+
+/* ===========Медиа запросы============================ */
+
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1100px) {
+  .hero__title {
+    font-size: 50px;
+}
+}
+
+@media (max-width: 900px) {
+
+.nav__list {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* font-size: 25px; */
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  z-index: 10;
+  padding: 26vh 15px 30px;
+  transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+}
+
+.body--opened-menu .nav__list {
+  transform: translateY(0%);
+    opacity: 1;
+    visibility: visible;
+}
+
+.burger-icon {
+  display: flex;
+  align-items: center;
+}
+
+.hero__title {
+  font-size: 40px;
+  line-height: 50px;
+  width: 400px;
+}
+
+.hero__slider {
+  width: 100%;
+  height: 400px;
+}
+
+.swiper-pagination {
+  padding: 0 0 7px;
+}
+.swiper-pagination-bullet {
+  width: 120px;
+  height: 2px;
+  margin: 5px 15px !important;
+}
+}
+
+@media (max-width: 700px) {
+  .hero__img {
+    display: none;
+  }
+
+  .hero__title {
+    width: 100%;
+  }
+
+  .hero__info {
+    width: 100%;
+    text-align: center;
+    padding: 0 56px 0 56px;
+  }
+
+  .hero__button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .swiper-pagination-bullet {
+    width: 100px;
+    height: 2px;
+  }
+  .swiper-pagination-bullet {
+    margin: 5px 11px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .swiper-pagination-bullet {
+    width: 60px;
+    height: 2px;
+  }
+  .hero__title {
+    font-size: 36px;
+    line-height: 42px;
+}
+.swiper-pagination-bullet {
+  margin: 5px 8px !important;
+}
+}
+
+@media (max-width: 500px) {
+  .hero__slider {
+    height: 350px;
+}
+  .swiper-pagination-bullet {
+    width: 40px;
+    height: 2px;
+  }
+  .hero__title {
+    font-size: 25px;
+    line-height: 30px;
+}
+  .hero__text {
+    font-size: 14px;
+    line-height: 17px;
+}
+.swiper-pagination-bullet {
+  margin: 5px 5px !important;
+}
+}
