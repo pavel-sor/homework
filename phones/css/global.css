@@ -1,0 +1,42 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5vh;
+}
+
+:root {
+  --transition: all .4s;
+}
+
+body {
+  font-family: 'Inter18pt', 'ReadexPro', sans-serif;
+  color: black;
+  font-size: 14px;
+  line-height: 1.7;
+  }
+
+  .wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    max-width: 1324px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 21.6;
+    font-weight: 400;
+    border: 1px solid #000;
+    border-radius: 60px;
+    padding: 14px 53px;
+  }
